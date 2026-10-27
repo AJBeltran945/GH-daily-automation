@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Project configuration
-BASE_DIR = Path.home() / "GH-daily-automation"
+BASE_DIR = Path(__file__).resolve().parent
 ENTRIES_DIR = BASE_DIR / "entries"
 LOG_FILE = BASE_DIR / "logs" / "automation.log"
 
